@@ -7,6 +7,7 @@ on:
     branches: ["main"]
   schedule:
     - cron: '0 0 1 * *' # This will run at 00:00 on the first day of every month 
+    - cron: '0 12 * * *' # This will run at 12:00 every day
 
 jobs:
   renew-certs:
