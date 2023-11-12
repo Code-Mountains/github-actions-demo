@@ -1,6 +1,10 @@
 name: Renew Certbot Certificates
 
 on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
   schedule:
     - cron: '0 0 1 * *' # This will run at 00:00 on the first day of every month 
 
