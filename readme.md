@@ -160,4 +160,65 @@ du -hs ../actions-runner/
 2.3G    ../actions-runner/
 
 
+# Identify service name running Github Actions runner service
+systemctl list-units | grep actions.runner
+
+
+# Restart Github Actions Runner service 
+sudo systemctl restart actions.runner.Code-Mountains.ub22.service
+sudo systemctl status actions.runner.Code-Mountains.ub22.service
+
+
+# Find detailed logs of github action runner as service using journalctl 
+sudo journalctl -b -u actions.runner.Code-Mountains.ub22.service
+
+
+## OUTPUT 
+
+-- Boot ea3cf100859d453981e96d72889fc956 --
+Nov 11 23:49:26 vault.thecodemountains.com systemd[1]: Started GitHub Actions Runner (Code-Mountains.ub22).
+Nov 11 23:49:26 vault.thecodemountains.com runsvc.sh[913]: .path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sysadmin/.dotnet/tools:/opt/mssql-tools/bin:/home/sysadmin/.dotnet/tools:/opt/mssql-tools/bin:/opt/mssql-tools/bin://home/sysadmin/go/bin
+Nov 11 23:49:26 vault.thecodemountains.com runsvc.sh[925]: Starting Runner listener with startup type: service
+Nov 11 23:49:26 vault.thecodemountains.com runsvc.sh[925]: Started listener process, pid: 1000
+Nov 11 23:49:26 vault.thecodemountains.com runsvc.sh[925]: Started running service
+Nov 11 23:49:31 vault.thecodemountains.com runsvc.sh[925]: √ Connected to GitHub
+Nov 11 23:49:31 vault.thecodemountains.com runsvc.sh[925]: Current runner version: '2.311.0'
+Nov 11 23:49:31 vault.thecodemountains.com runsvc.sh[925]: 2023-11-12 05:49:31Z: Listening for Jobs
+Nov 11 23:53:39 vault.thecodemountains.com runsvc.sh[925]: 2023-11-12 05:53:39Z: Running job: renew-certs
+Nov 11 23:53:44 vault.thecodemountains.com sudo[3198]: pam_unix(sudo:auth): conversation failed
+Nov 11 23:53:44 vault.thecodemountains.com sudo[3198]: pam_unix(sudo:auth): auth could not identify password for [sysadmin]
+Nov 11 23:53:44 vault.thecodemountains.com sudo[3198]: pam_sss(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=sysadmin rhost= user=sysadmin
+Nov 11 23:53:44 vault.thecodemountains.com sudo[3198]: pam_sss(sudo:auth): received for user sysadmin: 10 (User not known to the underlying authentication module)
+Nov 11 23:53:48 vault.thecodemountains.com runsvc.sh[925]: 2023-11-12 05:53:48Z: Job renew-certs completed with result: Failed
+Nov 11 23:54:36 vault.thecodemountains.com runsvc.sh[925]: Shutting down runner listener
+Nov 11 23:54:36 vault.thecodemountains.com runsvc.sh[925]: Sending SIGINT to runner listener to stop
+Nov 11 23:54:36 vault.thecodemountains.com runsvc.sh[925]: Sending SIGKILL to runner listener
+Nov 11 23:54:36 vault.thecodemountains.com runsvc.sh[925]: Exiting...
+Nov 11 23:54:36 vault.thecodemountains.com systemd[1]: Stopping GitHub Actions Runner (Code-Mountains.ub22)...
+Nov 11 23:55:06 vault.thecodemountains.com runsvc.sh[925]: Runner listener exited with error code null
+Nov 11 23:55:06 vault.thecodemountains.com runsvc.sh[925]: Runner listener exit with undefined return code, re-launch runner in 5 seconds.
+Nov 11 23:55:06 vault.thecodemountains.com systemd[1]: actions.runner.Code-Mountains.ub22.service: Deactivated successfully.
+Nov 11 23:55:06 vault.thecodemountains.com systemd[1]: Stopped GitHub Actions Runner (Code-Mountains.ub22).
+Nov 11 23:55:06 vault.thecodemountains.com systemd[1]: actions.runner.Code-Mountains.ub22.service: Consumed 9.654s CPU time.
+-- Boot 1f1acb5992d8430bb8a907500d9e03b6 --
+Nov 11 23:57:25 vault.thecodemountains.com systemd[1]: Started GitHub Actions Runner (Code-Mountains.ub22).
+Nov 11 23:57:25 vault.thecodemountains.com runsvc.sh[944]: .path=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/sysadmin/.dotnet/tools:/opt/mssql-tools/bin:/home/sysadmin/.dotnet/tools:/opt/mssql-tools/bin:/opt/mssql-tools/bin://home/sysadmin/go/bin
+Nov 11 23:57:26 vault.thecodemountains.com runsvc.sh[961]: Starting Runner listener with startup type: service
+Nov 11 23:57:26 vault.thecodemountains.com runsvc.sh[961]: Started listener process, pid: 1059
+Nov 11 23:57:26 vault.thecodemountains.com runsvc.sh[961]: Started running service
+Nov 11 23:57:33 vault.thecodemountains.com runsvc.sh[961]: √ Connected to GitHub
+Nov 11 23:57:33 vault.thecodemountains.com runsvc.sh[961]: Current runner version: '2.311.0'
+Nov 11 23:57:33 vault.thecodemountains.com runsvc.sh[961]: 2023-11-12 05:57:33Z: Listening for Jobs
+Nov 11 23:58:34 vault.thecodemountains.com runsvc.sh[961]: 2023-11-12 05:58:34Z: Runner connect error: The HTTP request timed out after 00:01:00.. Retrying until reconnected.
+Nov 12 00:06:00 vault.thecodemountains.com runsvc.sh[961]: 2023-11-12 06:06:00Z: Runner reconnected.
+Nov 12 00:06:00 vault.thecodemountains.com runsvc.sh[961]: 2023-11-12 06:06:00Z: Running job: renew-certs
+Nov 12 00:06:07 vault.thecodemountains.com sudo[3421]: pam_unix(sudo:auth): conversation failed
+Nov 12 00:06:07 vault.thecodemountains.com sudo[3421]: pam_unix(sudo:auth): auth could not identify password for [sysadmin]
+Nov 12 00:06:07 vault.thecodemountains.com sudo[3421]: pam_sss(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty= ruser=sysadmin rhost= user=sysadmin
+Nov 12 00:06:07 vault.thecodemountains.com sudo[3421]: pam_sss(sudo:auth): received for user sysadmin: 10 (User not known to the underlying authentication module)
+Nov 12 00:06:11 vault.thecodemountains.com runsvc.sh[961]: 2023-11-12 06:06:11Z: Job renew-certs completed with result: Failed
+
+
+
+
 ```

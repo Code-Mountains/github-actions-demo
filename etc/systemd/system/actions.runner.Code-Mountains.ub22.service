@@ -1,0 +1,14 @@
+[Unit]
+Description=GitHub Actions Runner (Code-Mountains.ub22)
+After=network.target
+
+[Service]
+ExecStart=/home/sysadmin/actions-runner/runsvc.sh
+User=sysadmin
+WorkingDirectory=/home/sysadmin/actions-runner
+KillMode=process
+KillSignal=SIGTERM
+TimeoutStopSec=5min
+
+[Install]
+WantedBy=multi-user.target
