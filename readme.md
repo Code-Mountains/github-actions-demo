@@ -153,4 +153,11 @@ Hint: Some lines were ellipsized, use -l to show in full.
 sudo ./svc.sh uninstall
 
 
+# Check size of folder in linux filesystem
+du -hs ../actions-runner/
+
+## OUTPUT 
+2.3G    ../actions-runner/
+
+
 ```
