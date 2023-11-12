@@ -39,3 +39,10 @@ jobs:
 
         sudo systemctl status nginx 
 
+    - name: Restart NodeJS Javascript game Fruitfall
+      run: |
+        echo "Restarting NodeJS app using PM2"        
+        pm2 start fruitfall 
+
+        pm2 list 
+
