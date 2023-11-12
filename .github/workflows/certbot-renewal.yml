@@ -28,7 +28,10 @@ jobs:
 
     - name: Certbot Renew certificates
       run: |
-        # Run Certbot and capture the output 
+        # Run Certbot renewal cmd 
+        sudo certbot renew --non-interactive --agree-tos -m thecodemountains@gmail.com 
+
+        # Run Certbot and Capture the output for showing final output 
         output=$(sudo certbot renew --non-interactive --agree-tos -m thecodemountains@gmail.com 2>&1)
 
         # Check if certs were renewed 
@@ -49,7 +52,7 @@ jobs:
 
         sudo systemctl status nginx 
 
-    - name: Restart NodeJS Javascript game Fruitfall
+    - name: Restart Fruitfall - NodeJS Javascript game 
       run: |
         echo "Restarting NodeJS app using PM2"        
         pm2 start fruitfall 
