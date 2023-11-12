@@ -29,3 +29,13 @@ jobs:
       run: |
         # Assuming the sysadmin user has the necessary permissions
         sudo certbot renew --non-interactive --quiet
+
+        echo "Certbot renewed all certs successfully."
+
+    - name: Restart Nginx         
+      run: |
+        echo "Restarting nginx web service and reverse proxy"
+        sudo systemctl restart nginx 
+
+        sudo systemctl status nginx 
+
