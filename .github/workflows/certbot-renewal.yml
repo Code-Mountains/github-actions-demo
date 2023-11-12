@@ -28,4 +28,4 @@ jobs:
     - name: Certbot Renew certificates
       run: |
         # Assuming the sysadmin user has the necessary permissions
-        certbot renew --non-interactive --quiet
+        sudo certbot renew --non-interactive --quiet
