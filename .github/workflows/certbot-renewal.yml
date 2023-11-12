@@ -1,0 +1,25 @@
+name: Renew Certbot Certificates
+
+on:
+  schedule:
+    - cron: '0 0 1 * *' # This will run at 00:00 on the first day of every month 
+
+jobs:
+  renew-certs:
+    runs-on: ["self-hosted","ub22"]    
+    
+    steps: 
+
+    - name: Checkout repo 
+      uses: actions/checkout@v2 
+
+    - name: Install SSH Key
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+
+    - name: Renew certificates 
+      run: |
+        # Add commands to SSH into your server and renew certificates 
+        ssh user@server "certbot renew --non-interactive"
