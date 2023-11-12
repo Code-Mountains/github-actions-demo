@@ -29,7 +29,7 @@ jobs:
     - name: Certbot Renew certificates
       run: |
         # Assuming the sysadmin user has the necessary permissions
-        sudo certbot renew --non-interactive --quiet
+        sudo certbot renew --non-interactive --agree-tos -m thecodemountains@gmail.com
 
         echo "SUCCESS: Certbot renewed all certs successfully."
 
