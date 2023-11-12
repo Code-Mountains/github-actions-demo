@@ -28,7 +28,7 @@ sudo ./svc.sh uninstall
 # Remove github action runner
 
 ## OUTPUT 
-./config.sh remove --token BDPP23KI7VWLEIENQYJTQSLFKBZNY
+./config.sh remove --token $TOKEN
 
 # Runner removal
 
@@ -40,11 +40,11 @@ sudo ./svc.sh uninstall
 
 
 # Configure Github Action Runner to run as service using official instructions 
-./config.sh --url https://github.com/Code-Mountains --token BDPP23IG6IRJ5SNUTPVYCADFKBZSK
+./config.sh --url https://github.com/Code-Mountains --token $TOKEN
 
 ## OUTPUT 
 
-./config.sh --url https://github.com/Code-Mountains --token BDPP23IG6IRJ5SNUTPVYCADFKBZSK
+./config.sh --url https://github.com/Code-Mountains --token $TOKEN
 
 --------------------------------------------------------------------------------
 |        ____ _ _   _   _       _          _        _   _                      |
