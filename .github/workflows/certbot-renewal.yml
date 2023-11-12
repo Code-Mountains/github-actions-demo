@@ -28,13 +28,17 @@ jobs:
 
     - name: Certbot Renew certificates
       run: |
-        # Assuming the sysadmin user has the necessary permissions
-        sudo certbot renew --non-interactive --agree-tos -m thecodemountains@gmail.com
+        # Run Certbot and capture the output 
+        output=$(sudo certbot renew --non-interactive --agree-tos -m thecodemountains@gmail.com 2>&1)
 
-        if [ $? -eq 0 ]; then 
+        # Check if certs were renewed 
+        if echo "$output" | grep -q "Congratulations"; then 
           echo "SUCCESS: Certbot renewed all certs successfully."          
-        else
+        elif echo "$output" | grep -q "No renewals were attempted"; then
           echo "SKIPPING: Certificates not yet due for renewal."
+        else
+          echo "ERROR: An unexpected situation occurred."
+          echo "$output"
         fi
 
 
