@@ -1,0 +1,468 @@
+2023-11-12 00:34:37,855:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 00:34:37,855:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 00:34:37,855:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--agree-tos', '-m', 'thecodemountains@gmail.com']
+2023-11-12 00:34:37,855:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 00:34:37,863:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-11-12 00:34:37,865:DEBUG:certbot._internal.plugins.selection:Requested authenticator None and installer None
+2023-11-12 00:34:37,865:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/usr/bin/certbot", line 33, in <module>
+    sys.exit(load_entry_point('certbot==1.21.0', 'console_scripts', 'certbot')())
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 15, in main
+    return internal_main.main(cli_args)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/main.py", line 1574, in main
+    return config.func(config, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/main.py", line 1270, in run
+    installer, authenticator = plug_sel.choose_configurator_plugins(config, plugins, "run")
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 216, in choose_configurator_plugins
+    authenticator = installer = pick_configurator(config, req_inst, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 22, in pick_configurator
+    return pick_plugin(
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 95, in pick_plugin
+    raise errors.MissingCommandlineFlag(
+certbot.errors.MissingCommandlineFlag: Missing command line flags. For non-interactive execution, you will need to specify a plugin on the command line.  Run with '--help plugins' to see a list of options, and see https://eff.org/letsencrypt-plugins for more detail on what the plugins do and how to use them.
+2023-11-12 00:34:37,867:ERROR:certbot._internal.log:Missing command line flags. For non-interactive execution, you will need to specify a plugin on the command line.  Run with '--help plugins' to see a list of options, and see https://eff.org/letsencrypt-plugins for more detail on what the plugins do and how to use them.
+2023-11-12 00:34:50,173:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 00:34:50,173:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 00:34:50,173:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--quiet', '--agree-tos', '-m', 'thecodemountains@gmail.com']
+2023-11-12 00:34:50,173:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 00:34:50,181:DEBUG:certbot._internal.log:Root logging level set at 40
+2023-11-12 00:34:50,182:DEBUG:certbot._internal.plugins.selection:Requested authenticator None and installer None
+2023-11-12 00:34:50,182:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/usr/bin/certbot", line 33, in <module>
+    sys.exit(load_entry_point('certbot==1.21.0', 'console_scripts', 'certbot')())
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 15, in main
+    return internal_main.main(cli_args)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/main.py", line 1574, in main
+    return config.func(config, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/main.py", line 1270, in run
+    installer, authenticator = plug_sel.choose_configurator_plugins(config, plugins, "run")
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 216, in choose_configurator_plugins
+    authenticator = installer = pick_configurator(config, req_inst, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 22, in pick_configurator
+    return pick_plugin(
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 95, in pick_plugin
+    raise errors.MissingCommandlineFlag(
+certbot.errors.MissingCommandlineFlag: Missing command line flags. For non-interactive execution, you will need to specify a plugin on the command line.  Run with '--help plugins' to see a list of options, and see https://eff.org/letsencrypt-plugins for more detail on what the plugins do and how to use them.
+2023-11-12 00:34:50,182:ERROR:certbot._internal.log:Missing command line flags. For non-interactive execution, you will need to specify a plugin on the command line.  Run with '--help plugins' to see a list of options, and see https://eff.org/letsencrypt-plugins for more detail on what the plugins do and how to use them.
+2023-11-12 00:34:53,025:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 00:34:53,025:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 00:34:53,025:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--quiet']
+2023-11-12 00:34:53,025:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 00:34:53,032:DEBUG:certbot._internal.log:Root logging level set at 40
+2023-11-12 00:34:53,033:DEBUG:certbot._internal.plugins.selection:Requested authenticator None and installer None
+2023-11-12 00:34:53,033:DEBUG:certbot._internal.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/usr/bin/certbot", line 33, in <module>
+    sys.exit(load_entry_point('certbot==1.21.0', 'console_scripts', 'certbot')())
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 15, in main
+    return internal_main.main(cli_args)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/main.py", line 1574, in main
+    return config.func(config, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/main.py", line 1270, in run
+    installer, authenticator = plug_sel.choose_configurator_plugins(config, plugins, "run")
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 216, in choose_configurator_plugins
+    authenticator = installer = pick_configurator(config, req_inst, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 22, in pick_configurator
+    return pick_plugin(
+  File "/usr/lib/python3/dist-packages/certbot/_internal/plugins/selection.py", line 95, in pick_plugin
+    raise errors.MissingCommandlineFlag(
+certbot.errors.MissingCommandlineFlag: Missing command line flags. For non-interactive execution, you will need to specify a plugin on the command line.  Run with '--help plugins' to see a list of options, and see https://eff.org/letsencrypt-plugins for more detail on what the plugins do and how to use them.
+2023-11-12 00:34:53,034:ERROR:certbot._internal.log:Missing command line flags. For non-interactive execution, you will need to specify a plugin on the command line.  Run with '--help plugins' to see a list of options, and see https://eff.org/letsencrypt-plugins for more detail on what the plugins do and how to use them.
+2023-11-12 00:35:07,514:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 00:35:07,514:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 00:35:07,514:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--agree-tos', '-m', 'thecodemountains@gmail.com']
+2023-11-12 00:35:07,514:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 00:35:07,521:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-11-12 00:35:07,524:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 00:35:07,530:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7fa7cf1f6200> and installer <certbot._internal.cli.cli_utils._Default object at 0x7fa7cf1f6200>
+2023-11-12 00:35:07,545:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:35:07,700:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:35:07,701:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:35:07,703:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:35:07,707:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:35:07,708:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:35:07,709:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 00:35:07,717:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:35:07,818:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:35:07,819:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:35:07,820:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:35:07,821:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:35:07,822:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:35:07,822:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 00:35:07,833:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:35:07,925:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:35:07,926:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:35:07,926:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:35:07,927:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:35:07,928:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:35:07,929:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 00:35:07,936:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:35:08,025:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:35:08,026:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:35:08,026:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:35:08,027:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:35:08,028:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:35:08,028:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 00:35:08,029:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 00:35:08,029:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 00:35:08,029:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 00:35:08,029:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 00:35:08,029:DEBUG:certbot._internal.renewal:no renewal failures
+2023-11-12 00:53:58,904:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 00:53:58,904:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 00:53:58,904:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--quiet']
+2023-11-12 00:53:58,905:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 00:53:58,916:DEBUG:certbot._internal.log:Root logging level set at 40
+2023-11-12 00:53:58,919:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 00:53:58,925:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7f8df69fa080> and installer <certbot._internal.cli.cli_utils._Default object at 0x7f8df69fa080>
+2023-11-12 00:53:58,938:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:53:59,061:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:53:59,063:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:53:59,065:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:53:59,071:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:53:59,072:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:53:59,072:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 00:53:59,080:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:53:59,163:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:53:59,164:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:53:59,165:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:53:59,166:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:53:59,168:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:53:59,168:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 00:53:59,175:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:53:59,260:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:53:59,262:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:53:59,263:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:53:59,265:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:53:59,266:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:53:59,267:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 00:53:59,285:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:53:59,369:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:53:59,371:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:53:59,372:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:53:59,373:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:53:59,374:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:53:59,374:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 00:53:59,374:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 00:53:59,374:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 00:53:59,374:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 00:53:59,374:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 00:53:59,374:DEBUG:certbot._internal.renewal:no renewal failures
+2023-11-12 00:57:01,331:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 00:57:01,332:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 00:57:01,332:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--quiet']
+2023-11-12 00:57:01,332:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 00:57:01,341:DEBUG:certbot._internal.log:Root logging level set at 40
+2023-11-12 00:57:01,342:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 00:57:01,349:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7f88a5dfa0e0> and installer <certbot._internal.cli.cli_utils._Default object at 0x7f88a5dfa0e0>
+2023-11-12 00:57:01,357:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:57:01,469:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:57:01,470:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:57:01,476:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:57:01,482:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:57:01,483:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:57:01,483:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 00:57:01,493:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:57:01,577:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:57:01,578:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:57:01,578:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:57:01,580:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:57:01,581:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:57:01,581:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 00:57:01,589:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:57:01,673:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:57:01,674:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:57:01,674:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:57:01,675:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:57:01,676:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:57:01,676:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 00:57:01,683:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:57:01,773:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:57:01,774:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:57:01,775:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:57:01,776:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:57:01,777:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:57:01,777:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 00:57:01,777:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 00:57:01,777:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 00:57:01,777:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 00:57:01,777:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 00:57:01,777:DEBUG:certbot._internal.renewal:no renewal failures
+2023-11-12 00:59:12,547:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 00:59:12,547:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 00:59:12,548:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--quiet']
+2023-11-12 00:59:12,548:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 00:59:12,556:DEBUG:certbot._internal.log:Root logging level set at 40
+2023-11-12 00:59:12,557:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 00:59:12,565:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7fd2885f60e0> and installer <certbot._internal.cli.cli_utils._Default object at 0x7fd2885f60e0>
+2023-11-12 00:59:12,573:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:59:12,664:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:59:12,665:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:59:12,667:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:59:12,672:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:59:12,673:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:59:12,673:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 00:59:12,680:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:59:12,760:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:59:12,761:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:59:12,762:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:59:12,763:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:59:12,764:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:59:12,765:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 00:59:12,770:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:59:12,845:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:59:12,846:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:59:12,847:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:59:12,849:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:59:12,849:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:59:12,850:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 00:59:12,855:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 00:59:12,938:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 00:59:12,939:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 00:59:12,939:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 00:59:12,941:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 00:59:12,943:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 00:59:12,943:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 00:59:12,943:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 00:59:12,943:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 00:59:12,944:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 00:59:12,944:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 00:59:12,944:DEBUG:certbot._internal.renewal:no renewal failures
+2023-11-12 01:03:25,779:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 01:03:25,780:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 01:03:25,780:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--agree-tos', '-m', 'thecodemountains@gmail.com']
+2023-11-12 01:03:25,780:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 01:03:25,788:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-11-12 01:03:25,790:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 01:03:25,797:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7f03c2202200> and installer <certbot._internal.cli.cli_utils._Default object at 0x7f03c2202200>
+2023-11-12 01:03:25,808:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:03:25,927:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:03:25,928:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:03:25,931:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:03:25,936:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:03:25,937:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:03:25,937:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 01:03:25,944:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:03:26,038:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:03:26,040:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:03:26,041:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:03:26,042:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:03:26,043:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:03:26,043:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 01:03:26,050:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:03:26,125:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:03:26,126:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:03:26,127:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:03:26,128:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:03:26,130:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:03:26,130:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 01:03:26,136:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:03:26,218:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:03:26,218:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:03:26,219:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:03:26,220:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:03:26,221:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:03:26,221:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:03:26,221:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 01:03:26,221:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 01:03:26,221:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 01:03:26,221:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:03:26,221:DEBUG:certbot._internal.renewal:no renewal failures
+2023-11-12 01:09:30,480:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 01:09:30,480:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 01:09:30,480:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--agree-tos', '-m', 'thecodemountains@gmail.com']
+2023-11-12 01:09:30,480:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 01:09:30,491:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-11-12 01:09:30,492:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 01:09:30,498:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7f9f093061d0> and installer <certbot._internal.cli.cli_utils._Default object at 0x7f9f093061d0>
+2023-11-12 01:09:30,507:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:09:30,654:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:09:30,655:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:09:30,657:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:09:30,661:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:09:30,662:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:09:30,662:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 01:09:30,670:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:09:30,751:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:09:30,753:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:09:30,753:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:09:30,755:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:09:30,756:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:09:30,756:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 01:09:30,763:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:09:30,856:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:09:30,857:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:09:30,857:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:09:30,858:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:09:30,860:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:09:30,860:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 01:09:30,868:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:09:30,960:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:09:30,961:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:09:30,961:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:09:30,962:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:09:30,963:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:09:30,963:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:09:30,963:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 01:09:30,963:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 01:09:30,963:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 01:09:30,963:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:09:30,963:DEBUG:certbot._internal.renewal:no renewal failures
+2023-11-12 01:14:31,262:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 01:14:31,262:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 01:14:31,262:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--agree-tos', '-m', 'thecodemountains@gmail.com']
+2023-11-12 01:14:31,263:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 01:14:31,273:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-11-12 01:14:31,274:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 01:14:31,279:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7f2892002230> and installer <certbot._internal.cli.cli_utils._Default object at 0x7f2892002230>
+2023-11-12 01:14:31,294:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:14:31,658:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:14:31,659:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:14:31,661:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:14:31,667:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:14:31,668:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:14:31,668:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 01:14:31,675:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:14:32,029:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:14:32,030:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:14:32,030:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:14:32,032:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:14:32,033:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:14:32,034:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 01:14:32,041:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:14:32,461:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:14:32,462:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:14:32,462:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:14:32,464:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:14:32,464:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:14:32,465:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 01:14:32,473:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:14:32,952:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:14:32,953:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:14:32,954:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:14:32,956:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:14:32,957:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:14:32,957:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:14:32,957:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 01:14:32,957:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 01:14:32,957:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 01:14:32,958:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:14:32,958:DEBUG:certbot._internal.renewal:no renewal failures
+2023-11-12 01:16:36,892:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 01:16:36,892:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 01:16:36,892:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--agree-tos', '-m', 'thecodemountains@gmail.com']
+2023-11-12 01:16:36,892:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 01:16:36,902:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-11-12 01:16:36,904:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 01:16:36,911:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7f9d7d9fa1d0> and installer <certbot._internal.cli.cli_utils._Default object at 0x7f9d7d9fa1d0>
+2023-11-12 01:16:36,921:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:16:37,029:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:16:37,030:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:16:37,032:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:16:37,038:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:16:37,039:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:16:37,039:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 01:16:37,046:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:16:37,146:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:16:37,147:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:16:37,147:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:16:37,148:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:16:37,149:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:16:37,149:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 01:16:37,156:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:16:37,234:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:16:37,236:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:16:37,237:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:16:37,239:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:16:37,241:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:16:37,242:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 01:16:37,253:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:16:37,340:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:16:37,341:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:16:37,341:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:16:37,342:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:16:37,343:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:16:37,344:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:16:37,344:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 01:16:37,344:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 01:16:37,344:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 01:16:37,344:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:16:37,344:DEBUG:certbot._internal.renewal:no renewal failures
+2023-11-12 01:16:37,917:DEBUG:certbot._internal.main:certbot version: 1.21.0
+2023-11-12 01:16:37,917:DEBUG:certbot._internal.main:Location of certbot entry point: /usr/bin/certbot
+2023-11-12 01:16:37,917:DEBUG:certbot._internal.main:Arguments: ['--non-interactive', '--agree-tos', '-m', 'thecodemountains@gmail.com']
+2023-11-12 01:16:37,917:DEBUG:certbot._internal.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#manual,PluginEntryPoint#nginx,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2023-11-12 01:16:37,927:DEBUG:certbot._internal.log:Root logging level set at 30
+2023-11-12 01:16:37,928:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+2023-11-12 01:16:37,935:DEBUG:certbot._internal.plugins.selection:Requested authenticator <certbot._internal.cli.cli_utils._Default object at 0x7f214b30e200> and installer <certbot._internal.cli.cli_utils._Default object at 0x7f214b30e200>
+2023-11-12 01:16:37,945:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:16:38,032:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:16:38,033:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:16:38,035:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/consul.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:16:38,043:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:16:38,045:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:16:38,045:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+2023-11-12 01:16:38,055:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:16:38,185:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:16:38,186:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:16:38,187:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/fruitfall.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:16:38,189:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:16:38,190:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:16:38,190:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+2023-11-12 01:16:38,196:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:16:38,277:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:16:38,278:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:16:38,278:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/ub22.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:16:38,280:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:16:38,281:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:16:38,281:DEBUG:certbot._internal.display.obj:Notifying user: Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+2023-11-12 01:16:38,288:DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): r3.o.lencr.org:80
+2023-11-12 01:16:38,356:DEBUG:urllib3.connectionpool:http://r3.o.lencr.org:80 "POST / HTTP/1.1" 200 503
+2023-11-12 01:16:38,357:DEBUG:certbot.ocsp:OCSP response for certificate /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is signed by the certificate's issuer.
+2023-11-12 01:16:38,357:DEBUG:certbot.ocsp:OCSP certificate status for /etc/letsencrypt/archive/vault.thecodemountains.com/cert1.pem is: OCSPCertStatus.GOOD
+2023-11-12 01:16:38,358:DEBUG:certbot._internal.display.obj:Notifying user: Certificate not yet due for renewal
+2023-11-12 01:16:38,359:DEBUG:certbot._internal.plugins.selection:Requested authenticator standalone and installer None
+2023-11-12 01:16:38,359:DEBUG:certbot._internal.display.obj:Notifying user: 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:16:38,359:DEBUG:certbot._internal.display.obj:Notifying user: The following certificates are not due for renewal yet:
+2023-11-12 01:16:38,360:DEBUG:certbot._internal.display.obj:Notifying user:   /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+2023-11-12 01:16:38,360:DEBUG:certbot._internal.display.obj:Notifying user: No renewals were attempted.
+2023-11-12 01:16:38,360:DEBUG:certbot._internal.display.obj:Notifying user: - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+2023-11-12 01:16:38,360:DEBUG:certbot._internal.renewal:no renewal failures

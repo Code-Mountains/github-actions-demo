@@ -3,3 +3,7 @@ sudo chown -R sysadmin:sysadmin /home/sysadmin/Documents/code/actions/github-act
 cp /home/sysadmin/actions-runner/runsvc.sh /home/sysadmin/Documents/code/actions/github-actions-demo/
 
 sudo cp /etc/pam.d/sudo /home/sysadmin/Documents/code/actions/github-actions-demo/etc/pam.d/sudo
+
+mkdir -p /home/sysadmin/Documents/code/actions/github-actions-demo/var/log/letsencrypt
+
+sudo cp /var/log/letsencrypt/letsencrypt.log /home/sysadmin/Documents/code/actions/github-actions-demo/var/log/letsencrypt/
