@@ -2,7 +2,13 @@
 
 ## For github actions pipeline to run sudo without password, add this to /etc/sudoers file
 sudo vim /etc/sudoers
+
 sysadmin ALL=(ALL) NOPASSWD: /usr/bin/certbot
+sysadmin@vault ALL=NOPASSWD: /usr/bin/certbot
+
+sysadmin ALL=(ALL) NOPASSWD: ALL
+sysadmin ALL=(ALL) NOPASSWD: /usr/bin/certbot, /bin/systemctl restart nginx, /bin/systemctl status nginx
+
 
 
 # Configure Github Action to Run as Service
@@ -218,6 +224,46 @@ Nov 12 00:06:07 vault.thecodemountains.com sudo[3421]: pam_sss(sudo:auth): authe
 Nov 12 00:06:07 vault.thecodemountains.com sudo[3421]: pam_sss(sudo:auth): received for user sysadmin: 10 (User not known to the underlying authentication module)
 Nov 12 00:06:11 vault.thecodemountains.com runsvc.sh[961]: 2023-11-12 06:06:11Z: Job renew-certs completed with result: Failed
 
+
+
+# Renew Certs and add email notification
+
+sudo certbot renew --non-interactive --agree-tos -m thecodemountains@gmail.com
+
+## OUTPUT 
+
+$ sudo certbot renew --non-interactive --agree-tos -m thecodemountains@gmail.com
+
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/consul.thecodemountains.com.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Certificate not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/fruitfall.thecodemountains.com.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Certificate not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/ub22.thecodemountains.com.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Certificate not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/vault.thecodemountains.com.conf
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Certificate not yet due for renewal
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+The following certificates are not due for renewal yet:
+  /etc/letsencrypt/live/consul.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/fruitfall.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+  /etc/letsencrypt/live/ub22.thecodemountains.com/fullchain.pem expires on 2024-02-05 (skipped)
+  /etc/letsencrypt/live/vault.thecodemountains.com/fullchain.pem expires on 2024-02-09 (skipped)
+No renewals were attempted.
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 
 

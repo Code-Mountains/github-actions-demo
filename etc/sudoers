@@ -1,0 +1,4 @@
+root	ALL=(ALL:ALL) ALL
+sysadmin ALL=(ALL) NOPASSWD: ALL
+%admin ALL=(ALL) ALL
+%sudo ALL=(ALL:ALL) NOPASSWD: ALL
