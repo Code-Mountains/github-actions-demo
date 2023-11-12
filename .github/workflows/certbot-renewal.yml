@@ -25,16 +25,7 @@ jobs:
     - name: Checkout repo 
       uses: actions/checkout@v2 
 
-    # - name: Install SSH Key
-    #   run: |
-    #     mkdir -p ~/.ssh
-    #     echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-    #     chmod 600 ~/.ssh/id_rsa
-
-    # - name: Renew certificates
-    #   run: |
-    #     # Assuming the sysadmin user has the necessary permissions
-    #     ssh -o StrictHostKeyChecking=no sysadmin@yourserver.com "certbot renew --non-interactive --quiet"
-
-    # - name: Cleanup SSH key
-    #   run: rm -f ~/.ssh/id_rsa
+    - name: Certbot Renew certificates
+      run: |
+        # Assuming the sysadmin user has the necessary permissions
+        certbot renew --non-interactive --quiet
