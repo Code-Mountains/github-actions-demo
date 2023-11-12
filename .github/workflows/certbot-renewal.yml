@@ -31,7 +31,12 @@ jobs:
         # Assuming the sysadmin user has the necessary permissions
         sudo certbot renew --non-interactive --agree-tos -m thecodemountains@gmail.com
 
-        echo "SUCCESS: Certbot renewed all certs successfully."
+        if [ $? -eq 0 ]; then 
+          echo "SUCCESS: Certbot renewed all certs successfully."          
+        else
+          echo "SKIPPING: Certificates not yet due for renewal."
+        fi
+
 
     - name: Restart Nginx         
       run: |
@@ -44,6 +49,4 @@ jobs:
       run: |
         echo "Restarting NodeJS app using PM2"        
         pm2 start fruitfall 
-
-        pm2 list 
 
